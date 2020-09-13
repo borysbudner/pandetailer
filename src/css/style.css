@@ -1,0 +1,564 @@
+@font-face {
+    font-family: Archia-Bold;
+    src: url('/src/assets/fonts/Archia-Bold.otf');
+}
+
+@font-face {
+    font-family: Archia-Light;
+    src: url('/src/assets/fonts/Archia-Light.otf');
+}
+
+@font-face {
+    font-family: Archia-Medium;
+    src: url('/src/assets/fonts/Archia-Medium.otf');
+}
+
+@font-face {
+    font-family: Archia;
+    src: url('/src/assets/fonts/Archia-Regular.otf');
+}
+
+@font-face {
+    font-family: Archia-Semi-Bold;
+    src: url('/src/assets/fonts/Archia-SemiBold.otf');
+}
+
+@font-face {
+    font-family: Archia-Thin;
+    src: url('/src/assets/fonts/Archia-Thin.otf');
+}
+
+/* ------------------ */
+
+body {
+    margin: 0;
+    font-family: "Archia", sans-serif;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    min-height: 750px;
+    grid-template-columns: 1fr 3fr 1fr;
+    position: relative;
+}
+
+.logo-content {
+    display: grid;
+    grid-template-rows: 130px 1fr;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+main {
+    display: flex;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.img {
+    background-image: url(/src/assets/img/bmw.png);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+.border-content{
+    border-left: 1px solid #e8e8e8;
+    height: 100%;
+    position: absolute;
+    left: 43%;
+    top: 0;
+    z-index: -1;
+}
+
+.border-section-button{
+    position: absolute;
+    left: 49%;
+    bottom: 19%;
+}
+
+.menu{
+    display: grid;
+    grid-template-rows: 130px 1fr;
+}
+
+.contact{
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact a{
+    color: #fff;
+    margin: auto;
+    font-family: "Archia-Semi-Bold";
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.67px;
+    text-decoration: none;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    min-height: 14vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    padding: 22px;
+    background-color: #e8e8e888;
+}
+
+.footer-second-section-text{
+    margin: 10px;
+}
+
+.footer-second-section-header{
+    margin: 10px;
+}
+
+.social-media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e8e8e888;
+}
+
+.social-media-icon{
+    width: 27px;
+    height: 26px;
+    padding: 15px;
+}
+
+.content-text{
+    font-family: "Archia-Light";
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.52px;
+    text-transform: uppercase;
+}
+
+.content-header{
+    color: #000000;
+    font-family: "Archia-Bold";
+    font-size: 54px;
+    font-weight: 700;
+}
+
+.content-link-first{
+    color: #000000;
+    font-family: "Archia-Bold";
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-right: 30px;
+}
+
+.content-link-first:hover{
+    color: #4D4D4D;
+}
+
+.content-link-second{
+    display: inline-block;
+    color: #9d9d9d;
+    font-family: "Archia-Bold";
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.content-link-second:hover{
+    color: #6B6B6B;
+}
+
+.oval{
+    width: 70px;
+    height: 70px;
+    border: 1px solid #e8e8e8;
+    border-radius: 50%;
+    display: flex;
+}
+.footer-button .oval{
+    margin: auto;
+}
+
+.footer-button .arrow-bottom{
+    margin: auto;
+    color: #e8e8e8;
+    font-size: 25px;
+}
+
+.rectangle{
+    width: 0;
+	height: 0;
+	border-top: 9px solid transparent;
+	border-bottom: 9px solid transparent;
+	border-left: 12px solid #000;
+	margin: auto;
+}
+
+.last-job{
+    display: block;
+}
+
+.footer-arrow-right{
+    padding-left: 4em;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav .closebtn {
+    transform: rotate(90deg);
+    color: #ffffff;
+    font-family: "Archia-Semi-Bold";
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.sidenav .closebtn:hover{
+    text-decoration: underline;
+}
+
+.sidenav .row{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.sidenav .column-menu{
+    flex: 30%;
+    padding-left: 5%;
+}
+
+.sidenav .column-offer{
+    flex: 60%;
+}
+
+.sidenav .closeMenu{
+    position: absolute;
+    right: 0px;
+    top: 50%;
+}
+
+.footer-button{
+    background-color: #000;
+    display: flex;
+}
+
+.menu-button{
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    cursor: pointer;
+    transform: rotate(90deg);
+    color: #000000;
+    font-family: "Archia-Semi-Bold";
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.menu-button:hover{
+    text-decoration: underline;
+}
+
+.sidenav .column-menu p,
+.sidenav .column-offer p{
+    color: #4a4a4a;
+    font-family: "Archia-Light";
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.52px;
+    text-transform: uppercase;
+    padding-left: 5%;
+}
+
+.sidenav .column-menu a{
+    width: 185px;
+    height: 47px;
+    color: #fff;
+    font-family: "Archia-Semi-Bold";
+    font-size: 40px;
+    font-weight: 600;
+    padding-left: 20px;
+}
+
+.sidenav .column-menu a:hover{
+    text-decoration: underline;
+}
+
+.sidenav .column-offer a{
+    width: 400px;
+    height: 42px;
+    color: #9d9d9d;
+    font-family: "Archia-Semi-Bold";
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.sidenav .column-offer a:hover{
+    text-decoration: underline;
+}
+
+.submenu-social{
+    display: flex;
+    position: absolute;
+    bottom: 50px;
+    left: 5%;
+}
+
+.submenu-social a:hover{
+    color: #fff;
+}
+
+.submenu-social a{
+    color: #9d9d9d;
+    font-family: "Archia-Bold";
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1023px) {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 4fr;
+        min-height: 660px;
+    }
+
+    .logo-content {
+        display: flex;
+        justify-content: center;
+    }
+
+    main{
+        display: block;
+        margin: auto;
+        padding-left: 10px;
+    }
+
+    .content-header{
+        margin-top: 15px;
+        font-size: 50px;
+        width: 75%;
+    }
+
+    .img{
+        display: none;
+    }
+
+    .border-content{
+        display: none;
+    }
+
+    .border-section-button{
+        display: none;
+    }
+
+    .contact{
+        display: none;
+    }
+
+    .menu{
+        display: block;
+    }
+
+    .footer-button{
+        display: none;
+    }
+
+    .content-link a{
+        display: block;
+        margin: 15px 0;
+    }
+
+    .menu-button {
+        top: 40%;
+    }
+
+    .sidenav .closeMenu {
+        position: absolute;
+        right: 20px;
+        top: 7%;
+    }
+
+    .footer-arrow-right {
+        padding-left: 1em;
+    }
+
+    .sidenav a {
+        padding: 5px 5px 5px 32px;
+    }
+
+    .sidenav .row {
+        display: block;
+    }
+
+    .sidenav .column-menu a {
+        height: 27px;
+        font-size: 20px;
+    }
+
+    .sidenav .column-offer a {
+        height: 22px;
+        font-size: 16px;
+    }
+
+    footer{
+        display: block;
+        position: relative;
+    }
+
+    .social-media-icon {
+        filter: invert(1);
+    }
+    .social-media{
+        background-color: #000;
+    }
+
+    .sidenav .column-menu {
+        padding-top: 5%;
+    }
+
+    .submenu-social {
+        display: block;
+        position: absolute;
+        bottom: 50px;
+        left: 5%;
+    }
+  }
+
+@media (min-width: 768px ) and (max-width: 1023px) {
+
+    .container{
+        min-height: 750px;
+    }
+
+    .sidenav .column-menu a {
+        height: 54px;
+        font-size: 44px;
+    }
+
+    .sidenav .column-offer a {
+        height: 42px;
+        font-size: 32px;
+    }
+
+    .sidenav .column-offer {
+        padding-left: 5%;
+    }
+
+    .sidenav .column-menu {
+        padding-top: 5%;
+    }
+
+    .submenu-social {
+        display: flex;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: 0;
+    }
+
+    .border-content {
+        display: flex;
+        position: absolute;
+        left: 75%;
+    }
+
+    .img {
+        display: flex;
+        background-position: left;
+    }
+
+    .border-section-button {
+        display: flex;
+        position: absolute;
+        bottom: 25%;
+        left: 55%;
+    }
+
+    .contact {
+        display: flex;
+        width: 25%;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .contact a {
+        margin: 30px;
+    }
+
+    .logo-content {
+        position: relative;
+        left: 3%;
+        justify-content: start;
+    }
+}
+
+@media (min-width: 320px ) and (max-width: 374px) {
+
+    .container{
+        min-height: 568px;
+    }
+
+    .sidenav .column-menu a {
+        height: 20px;
+        font-size: 16px;
+    }
+
+    .sidenav .column-offer a {
+        height: 16px;
+        font-size: 12px;
+    }
+
+    .content-header {
+        font-size: 40px;
+    }
+
+    .footer-second-section-header{
+        font-size: 18px;
+    }
+
+}

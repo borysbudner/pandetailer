@@ -292,6 +292,8 @@ button{
     background-color: #000;
     display: flex;
     border-color: transparent;
+    height: 100%;
+    width: 100%;
 }
 
 .menu-button{

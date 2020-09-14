@@ -520,6 +520,7 @@ footer {
     .img {
         display: flex;
         background-position: left;
+        background-size: initial;
     }
 
     .border-section-button {

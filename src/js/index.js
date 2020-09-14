@@ -11,8 +11,16 @@ function closeNav() {
     menu.style.visibility = "hidden";
 }
 
+function keyPress (e) {
+    if(e.key === "Escape") {
+        closeNav();
+    }
+}
+
 window.addEventListener('click', function(event){
     if(event.target != menu && event.target != menuButton){
         closeNav();
     }
 });
+
+window.addEventListener('keydown', keyPress);

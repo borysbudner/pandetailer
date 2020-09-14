@@ -237,6 +237,7 @@ footer {
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
+    visibility: hidden;
   }
 
 .sidenav a {

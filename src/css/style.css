@@ -79,6 +79,8 @@ main {
     position: absolute;
     left: 49%;
     bottom: 19%;
+    background-color: transparent;
+    border-color: transparent;
 }
 
 .menu{
@@ -283,6 +285,7 @@ footer {
 .footer-button{
     background-color: #000;
     display: flex;
+    border-color: transparent;
 }
 
 .menu-button{
@@ -291,6 +294,8 @@ footer {
     top: 50%;
     cursor: pointer;
     transform: rotate(90deg);
+    background-color: transparent;
+    border-color: transparent;
     color: #000000;
     font-family: "Archia-Semi-Bold";
     font-size: 17px;
